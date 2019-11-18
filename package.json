@@ -18,7 +18,7 @@
     "html-webpack-plugin": "^3.2.0",
     "sass-loader": "^7.3.1",
     "webpack": "^3.0.0",
-    "webpack-dev-server": "^2.11.5"
+    "webpack-dev-server": "^3.1.11"
   },
   "dependencies": {
     "d3": "^5.14.1"
