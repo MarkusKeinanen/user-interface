@@ -13,34 +13,68 @@
     <link rel="stylesheet" href="bundle-index.css" />
   </head>
   <body>
+
+      <div class="top-bar">
+          <div style="width: 100%;">
+            <div>
+                <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="Next month" data-mdc-ripple-is-unbounded="true">keyboard_arrow_left</button>
+              </div>
+              <div id="month-setter">
+                  <div class="month-option selected">January 2019</div>
+                  <div class="month-option">February 2019</div>
+                  <div class="month-option">March 2019</div>
+                  <div class="month-option">April 2019</div>
+                  <div class="month-option">May 2019</div>
+                  <div class="month-option">June 2019</div>
+                  <div class="month-option">July 2019</div>
+                  <div class="month-option">August 2019</div>
+                  <div class="month-option">September 2019</div>
+                  <div class="month-option">October 2019</div>
+                  <div class="month-option">November 2019</div>
+                  <div class="month-option">December 2019</div>
+              </div>
+              <div>
+                <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="Next month" data-mdc-ripple-is-unbounded="true">keyboard_arrow_right</button>
+              </div>
+              <div id="settings-button" style="position: absolute; right: 10px; top: 8px;">
+                  <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.4792 12.9856L18.4793 12.9856L18.484 12.9772C18.5788 12.8065 18.6541 12.5897 18.62 12.3512C18.5842 12.1009 18.4412 11.9136 18.269 11.7876L16.7347 10.5942C16.7453 10.4233 16.75 10.2241 16.75 10C16.75 9.77592 16.7453 9.57667 16.7347 9.4058L18.269 8.21241C18.4412 8.08637 18.5842 7.89912 18.62 7.64884C18.6541 7.41028 18.5788 7.1935 18.484 7.0228L18.4841 7.02276L18.4792 7.01442L16.8013 4.12693C16.801 4.12629 16.8006 4.12565 16.8002 4.12502C16.6975 3.94615 16.5364 3.79125 16.3092 3.72133C16.0925 3.65467 15.8794 3.68504 15.7013 3.74441L15.6881 3.7488L15.6752 3.75391L13.8619 4.47238C13.5346 4.24188 13.1935 4.04256 12.8388 3.87491L12.5653 1.96054L12.5626 1.94153L12.5584 1.92279C12.518 1.74082 12.4345 1.54569 12.2681 1.39593C12.0943 1.23955 11.8827 1.17969 11.6797 1.17969H8.32033C8.11734 1.17969 7.9057 1.23955 7.73194 1.39593C7.56554 1.54569 7.48205 1.74082 7.44161 1.92278L7.43745 1.94153L7.43473 1.96054L7.16142 3.87373C6.84943 4.02355 6.5101 4.22582 6.14506 4.47513L4.32483 3.75391L4.31193 3.7488L4.29876 3.74441C4.12065 3.68504 3.90751 3.65467 3.69087 3.72133C3.46359 3.79126 3.30249 3.94619 3.19977 4.12508L1.52083 7.01442L1.52075 7.01437L1.51607 7.0228C1.42124 7.1935 1.34597 7.41028 1.38005 7.64884C1.4158 7.89912 1.55881 8.08637 1.73102 8.2124L3.26539 9.4058C3.25473 9.57667 3.25002 9.77592 3.25002 10C3.25002 10.2241 3.25473 10.4233 3.26539 10.5942L1.73102 11.7876C1.55881 11.9136 1.4158 12.1009 1.38005 12.3512C1.34597 12.5897 1.42124 12.8065 1.51607 12.9772L1.51599 12.9772L1.52083 12.9856L3.19871 15.8731C3.19905 15.8737 3.19938 15.8742 3.19972 15.8748C3.30244 16.0538 3.46356 16.2087 3.69087 16.2787C3.90751 16.3453 4.12065 16.315 4.29876 16.2556L4.31193 16.2512L4.32483 16.2461L6.13811 15.5276C6.46541 15.7581 6.8065 15.9574 7.16125 16.1251L7.43473 18.0395L7.43745 18.0585L7.44161 18.0772C7.48205 18.2592 7.56554 18.4543 7.73194 18.6041C7.9057 18.7604 8.11734 18.8203 8.32033 18.8203H11.6797C11.8827 18.8203 12.0943 18.7604 12.2681 18.6041C12.4345 18.4543 12.518 18.2592 12.5584 18.0772L12.5626 18.0585L12.5653 18.0395L12.8386 16.1263C13.1506 15.9765 13.4899 15.7742 13.855 15.5249L15.6752 16.2461L15.6881 16.2512L15.7013 16.2556C15.8794 16.315 16.0925 16.3453 16.3092 16.2787C16.5365 16.2087 16.6976 16.0538 16.8003 15.8749C16.8006 15.8743 16.801 15.8737 16.8013 15.8731L18.4792 12.9856ZM10 12.4297C9.32588 12.4297 8.76279 12.1963 8.28326 11.7168C7.80373 11.2372 7.57033 10.6741 7.57033 10C7.57033 9.32586 7.80373 8.76277 8.28326 8.28324C8.76279 7.80371 9.32588 7.57031 10 7.57031C10.6742 7.57031 11.2372 7.80371 11.7168 8.28324C12.1963 8.76277 12.4297 9.32586 12.4297 10C12.4297 10.6741 12.1963 11.2372 11.7168 11.7168C11.2372 12.1963 10.6742 12.4297 10 12.4297Z" fill="white" stroke="#4F4F4F"/>
+                    </svg>
+                    
+              </div>
+          </div>
+          <div style="width: 100%">
+            <div class="top-bar-buttons">
+              <div class="top-bar-button mdc-button__ripple">Entries</div>
+              <div class="top-bar-button mdc-button__ripple">Statistics</div>
+              <div class="top-bar-button mdc-button__ripple ">Insights</div>
+            </div>
+          </div>
+          
+        </div>
+
+
     <div class="content">
-      <h2>Welcome to Emotion Tracker v0.1!</h2>
-      <a class="mdc-button mdc-button--raised" href="/inputpage.html">  <span class="mdc-button__ripple"></span> Go to Emotions Inputs Page</a>
-      <br/>
-      <div style="width: 500px; display: inline-block; margin-top: 30px;">
-        <div class="mdc-card demo-card">
-          <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
-            <div class="mdc-card__media mdc-card__media--16-9 demo-card__media" style="background-image: url(&quot;https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg&quot;);"></div>
-            <div class="demo-card__primary">
-              <h2 class="demo-card__title mdc-typography mdc-typography--headline6">THIS IS A MATERIAL.IO CARD ELEMENT.</h2>
-              <h3 class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">asd asd asd asdas dasd</h3>
-            </div>
-            <div class="demo-card__secondary mdc-typography mdc-typography--body2">asd asd asdas das dasdasdasd asdas dasdas dsa dasdasdas dasdasdas dasd as asdas dasdas dsa dasdasdas dasdasdas dasd as <div>
-          </div>
-          <div class="mdc-card__actions">
-            <div class="mdc-card__action-buttons">
-              <button class="mdc-button mdc-card__action mdc-card__action--button">  <span class="mdc-button__ripple"></span> Read</button>
-              <button class="mdc-button mdc-card__action mdc-card__action--button">  <span class="mdc-button__ripple"></span> Bookmark</button>
-            </div>
-            <div class="mdc-card__action-icons">
-              <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded" aria-pressed="false" aria-label="Add to favorites" title="Add to favorites">
-                <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">favorite</i>
-                <i class="material-icons mdc-icon-button__icon">favorite_border</i>
-              </button>
-              <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="Share" data-mdc-ripple-is-unbounded="true">share</button>
-              <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="More options" data-mdc-ripple-is-unbounded="true">more_vert</button>
-            </div>
-          </div>
+
+      <div id="entries" style="width: 500px; display: inline-block; margin-top: 30px; position: relative;">
+        <div id="new-entry-button">
+            <svg width="70" height="69" viewBox="0 0 50 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+              <path d="M41.8575 27.7636V22.834H31.7636V12.7401H26.834V22.834H16.7401V27.7636H26.834V37.8575H31.7636V27.7636H41.8575ZM11.5758 7.69319C16.5054 2.76362 22.4131 0.298828 29.2988 0.298828C36.1846 0.298828 42.0531 2.76362 46.9045 7.69319C51.834 12.5445 54.2988 18.4131 54.2988 25.2988C54.2988 32.1846 51.834 38.0923 46.9045 43.0218C42.0531 47.8732 36.1846 50.2988 29.2988 50.2988C22.4131 50.2988 16.5054 47.8732 11.5758 43.0218C6.72449 38.0923 4.29883 32.1846 4.29883 25.2988C4.29883 18.4131 6.72449 12.5445 11.5758 7.69319Z" fill="#56DAF2"/>
+              </g>
+              <defs>
+              <filter id="filter0_d" x="0.298828" y="0.298828" width="70" height="69" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+              <feOffset dy="4"/>
+              <feGaussianBlur stdDeviation="2"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+              </filter>
+              </defs>
+              </svg>
+              
         </div>
       </div>
     <script src="bundle-index.js" async></script>

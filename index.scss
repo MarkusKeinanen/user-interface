@@ -1,1 +1,81 @@
 @import './common';
+
+.thin-box-shadow {
+  -webkit-box-shadow: 0px 0px 13px 1px rgba(41, 37, 41, 1);
+  -moz-box-shadow: 0px 0px 13px 1px rgba(41, 37, 41, 1);
+  box-shadow: 0px 0px 13px 1px rgba(41, 37, 41, 1);
+}
+
+.content {
+  max-width: 800px;
+  margin: auto auto;
+  margin-bottom: 100px;
+  padding: 0px;
+}
+
+/* TOP BAR */
+.top-bar {
+  text-align: center;
+  background: white;
+  width: 100%;
+  height: 100px;
+}
+.top-bar div {
+  display: inline-block;
+}
+.top-bar-buttons {
+  width: 100%;
+  vertical-align: middle;
+  border-top: 1px solid lightgray;
+}
+.top-bar-button {
+  height: 50px;
+  line-height: 50px;
+  color: #56ccf2;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.top-bar-button:hover {
+  border-bottom: 1px solid #56ccf2;
+}
+#settings-button {
+  cursor: pointer;
+}
+#settings-button:hover svg path {
+  fill: lightgray;
+}
+
+/* MONTH SETTER */
+#month-setter {
+  vertical-align: middle;
+}
+#month-setter .month-option {
+  cursor: pointer;
+}
+
+#month-setter .month-option:not(.selected) {
+  display: none;
+}
+
+/* ENTRIES */
+.entries {
+  position: relative;
+}
+#new-entry-button {
+  position: fixed;
+  right: 10px;
+  bottom: -5px;
+  z-index: 1;
+  cursor: pointer;
+}
+#new-entry-button:hover svg path {
+  fill: white;
+}
+.entry {
+  margin-top: 10px;
+}
+.demo-card {
+  position: relative;
+}
